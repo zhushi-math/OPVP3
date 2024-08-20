@@ -1,6 +1,6 @@
-Variational Optimization Based on Optimal Policy Sampling for Offline Reinforcement Learning
+Feasible Region Self-Limitation: A Novel Approach to Policy Optimization in Offline Reinforcement Learning
 ==================================
-This project provides the open source implementation of the OPVP method introduced in the paper: "Variational Optimization Based on Optimal Policy Sampling for Offline Reinforcement Learning" . 
+This project provides the open source implementation of the POFRS method introduced in the paper: "Feasible Region Self-Limitation: A Novel Approach to Policy Optimization in Offline Reinforcement Learning" . 
 
 ## Installation
 #### 1. System requirements
@@ -20,8 +20,8 @@ And enter the sudo password to finish dependencies installation.
 #### 3. Anaconda Python env setup
 Back to the repo root folder, **activate a python 3.7 virtual anaconda env**, and then run
 ```
-conda create -n OPVP python=3.7
-conda activate OPVP
+conda create -n POFRS python=3.7
+conda activate POFRS
 cd ../.. && bash install_all.sh
 ```
 It will install the modified `gym` and this repo's python package dependencies that are listed in `requirement.txt`.  Note that we modify the original environment repos to accelerate the training process, so not using our provided envs may require additional hyper-parameters fine-tuning.
@@ -39,7 +39,7 @@ Before running, you need to download the dataset.
 
 Simply run
 ```
-python script/OPVP_main.py -wan
+python script/POFRS_main.py -wan
 ```
 
 ### Check the result of the experiment
